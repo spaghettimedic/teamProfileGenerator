@@ -6,7 +6,6 @@ test('creates an Engineer object', () => {
   expect(engineer.name).toEqual(expect.any(String));
   expect(engineer.id).toEqual(expect.any(String));
   expect(engineer.email).toEqual(expect.any(String));
-  expect(engineer.role).toEqual(expect.any(String));
   expect(engineer.github).toEqual(expect.any(String));
 });
 
@@ -16,6 +15,6 @@ test("gets Engineer object's properties", () => {
   expect(engineer.getName()).toHaveProperty('name');
   expect(engineer.getId()).toHaveProperty('id');
   expect(engineer.getEmail()).toHaveProperty('email');
-  expect(engineer.getRole()).toHaveProperty('role');
+  expect(engineer.getRole()).toBe('Engineer');
   expect(engineer.getGithub()).toHaveProperty('github');
 });
