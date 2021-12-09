@@ -6,6 +6,7 @@ test('creates an Manager object', () => {
   expect(manager.name).toEqual(expect.any(String));
   expect(manager.id).toEqual(expect.any(String));
   expect(manager.email).toEqual(expect.any(String));
+  expect(manager.role).toEqual(expect.any(String));
   expect(manager.officeNumber).toEqual(expect.any(String));
 });
 
@@ -15,6 +16,6 @@ test("gets Manager object's properties", () => {
   expect(manager.getName()).toHaveProperty('name');
   expect(manager.getId()).toHaveProperty('id');
   expect(manager.getEmail()).toHaveProperty('email');
-  expect(manager.getRole()).toBe('Manager');
+  expect(manager.getRole()).toHaveProperty('role');
   expect(manager.getOfficeNumber()).toHaveProperty('officeNumber');
 });
