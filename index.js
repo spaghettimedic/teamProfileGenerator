@@ -170,19 +170,14 @@ const addTeamMember = teamDataArr => {
 
     if (role === 'Manager') {
       teamDataArr.employees.push(new Manager(name, id, email, role, officeNumber));
-      console.log(teamDataArr);
       return addTeamMember(teamDataArr);
     } else if (role === 'Engineer') {
       teamDataArr.employees.push(new Engineer(name, id, email, role, github));
-      console.log(teamDataArr);
       return addTeamMember(teamDataArr);
     } else if (role === 'Intern') {
       teamDataArr.employees.push(new Intern(name, id, email, role, school));
-      console.log(teamDataArr);
       return addTeamMember(teamDataArr);
     } else if (role === 'Finish building team') {
-      console.log('"Finish building team" was selected!!!!!!!!!!!');
-      console.log(teamDataArr);
       return teamDataArr;
     }
   });
@@ -194,7 +189,6 @@ initializeUser()
   return generatePage(teamDataArr);
 })
 .then(pageHTML => {
-  console.log(writeFile(pageHTML));
   return writeFile(pageHTML);
 })
 .then(writeFileResponse => {
