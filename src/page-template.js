@@ -13,6 +13,7 @@ const generateManager = employeesArr => {
             <p class="card-text"><span class="text-decoration-underline">Email:</span> <a href="mailto:${email}" class="btn btn-outline-dark">${email}</a></p>
             <p class="card-text"><span class="text-decoration-underline">Phone:</span> ${officeNumber}</p>
           </div>
+        </div>
         `
       })
     .join('')}
