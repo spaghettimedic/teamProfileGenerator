@@ -14,7 +14,7 @@ Team Profile Generator easily creates an HTML file with your team's information!
 * [Deployed Application](#deployed-application)
 
 ## Installation
-To install Team Profile Generator, go to its GitHub repository and download the zip file to the desired location on your machine. Then, after extracting all of its contents, open the root directory of Team Profile Generator in your terminal and type "node index" into the command line to run it.
+To install Team Profile Generator, go to its [GitHub repository](https://www.github.com/spaghettimedic/teamProfileGenerator) and download the zip file to the desired location on your machine. Then, after extracting all of its contents, open the root directory of Team Profile Generator in your terminal and type "node index" into the command line to run it.
 
 ## Usage
 After initializing the application, read the prompts and answer the questions accordingly. Note that the input you provide will be used in the generated file exactly as it is entered into the application (capitalization, spaces, etc.) so keep that in mind for formatting reasons when typing in proper nouns, phone numbers, and email addresses. When you are finished adding your team members simply select "Finish building team" from the prompt menu and you will see a confirmation message that your file was created, unless there was some kind of error, in which case you will see the error message. Your generated file will be in the /dist directory of the Team Profile Generator root directory that you downloaded from GitHub and extracted. You can open the file to edit it directly if desired or simply cut/copy/paste it where ever necessary for use from there.
